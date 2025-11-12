@@ -1,0 +1,108 @@
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Tahoma, sans-serif; /* Modern Font */
+  color: #333; /* Darker text for better readability */
+  background: #f4f6f9; /* Light, subtle background for overall app */
+}
+
+/* --- SIDEBAR (For Review.html, Teacher.html already uses Bootstrap styles) --- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* Slightly wider */
+  height: 100%;
+  background: #203354; /* Deep, professional blue */
+  padding: 30px 20px;
+  color: white;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar h2 {
+  margin-bottom: 40px;
+  color: #a8dadc; /* Light accent color */
+  font-weight: 700;
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 15px;
+}
+
+.sidebar a {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+.sidebar a:hover,
+.sidebar a.active {
+  background: #3c5478; /* Slight hover/active background */
+  color: #a8dadc;
+}
+
+/* --- MAIN CONTENT (For Review.html) --- */
+.main-content {
+  margin-left: 250px;
+  padding: 40px;
+}
+
+header {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  color: #203354;
+  font-weight: 800;
+}
+
+/* --- CARDS & UI ELEMENTS --- */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Softer, deeper shadow */
+  border: none;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* BUTTONS */
+button {
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  background: #1e88e5; /* A vibrant, professional blue */
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+button:hover {
+  background: #1565c0;
+}
+
+/* INPUTS (For Review.html) */
+input, textarea, select {
+  width: 100%;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box; /* Crucial for padding/border not breaking width */
+}
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
